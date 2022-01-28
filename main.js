@@ -18,6 +18,9 @@ const app = Vue.createApp({
         },
         decrementCart() {
             this.cart = (this.cart > 0) ? this.cart - 1 : 0;
+        },
+        updateImage(variantImage) {
+            this.image = variantImage;
         }
     }
 })
